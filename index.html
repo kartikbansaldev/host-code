@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="testimonial-section">
+      <div class="testimonial-wrapper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="content-wrapper">
+                <div class="content">
+                  <p>
+                    "This training was probably one of the most engaging and
+                    perfect sessions I’ve ever been in. Coach Kesner cut on so
+                    many lightbulbs in my head! I thank you all for the
+                    opportunity.”
+                  </p>
+                  <div class="swiper-avatar">
+                    <img
+                      src="https://bikes-n-stuff.com/wp-content/uploads/sb-instagram-feed-images/julietelliott.jpg"
+                    />
+                  </div>
+                  <p class="cite">Deontre F.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content-wrapper">
+                <div class="content">
+                  <p>
+                    "What an AWESOME session!!! It is incredibly difficult to
+                    curate an engaging full day of training with busy
+                    professional and Kesner did just that and MORE! I learned so
+                    much and will start employing some of what I learn tomorrow
+                    in my meetings.”
+                  </p>
+                  <div class="swiper-avatar">
+                    <img
+                      src="https://bikes-n-stuff.com/wp-content/uploads/sb-instagram-feed-images/julietelliott.jpg"
+                    />
+                  </div>
+                  <p class="cite">Taeyjuana Lyons</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content-wrapper">
+                <div class="content">
+                  <p>
+                    "Coach Kes was very kind, helpful, encouraging, and
+                    well-prepared. The course had a great structure and was very
+                    applicable to our everyday work environment (even if you
+                    don't give presentations regularly)”
+                  </p>
+                  <div class="swiper-avatar">
+                    <img
+                      src="https://bikes-n-stuff.com/wp-content/uploads/sb-instagram-feed-images/julietelliott.jpg"
+                    />
+                  </div>
+                  <p class="cite">Brandee M.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-nav-wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoHeight: false,
+        centeredSlides: true,
+        slidesPerView: 1,
+        // Responsive breakpoints
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        /*scrollbar: {
+    el: '.swiper-scrollbar',
+  },*/
+      });
+    </script>
+  </body>
+</html>
